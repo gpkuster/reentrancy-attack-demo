@@ -42,14 +42,15 @@ This order breaks the **Checks-Effects-Interactions (CEI)** pattern and makes it
 ## 🔒 How to Fix It
 
 Follow the **CEI pattern** properly:
-> Check `CEICryptoBank.sol`
+> Use `CEICryptoBank.sol` in the MaliciousContract
 
 Or use OpenZeppelin's `ReentrancyGuard`:
-> Check `GuardCryptoBank.sol`
+> Use `GuardCryptoBank.sol` in the MaliciousContract
 
 ## 📚 Requirements
 - Solidity ^0.8.0
 - Remix IDE or Hardhat (optional)
+- OpenZeppelin (only if you want to test `GuardCryptoBank.sol`)
 
 ## ⚠️ Disclaimer
 
